@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Wild</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <!---Inicio Cabecario.-->
+    <nav class="navbar navbar-expand-lg bg-warning p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Sunny Wild</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAlt0up" aria-controls="navbarNavAlt0up" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav>
+  <!---Fim do Cabecario.-->
+
+  <!--- inicio da pagina -->
+  <nav class="navbar p-4 bg-warning">
+    <div class="container-fluid justify-content-center ">
+      <span class="navbar-text text-center text-white">
+        <h1>Sunny Wild Championship</h1>
+        <h5>Prepare-se para a Liga dos Bagres!!</h5>
+      </span>
+    </div>
+  </nav>
+
+<br><br>
+
+<nav class="p-3">
+  <div class="container-fluid justify-content-center">
+    <span class="navbar-text text-center">
+      <h5>Iniciativa do Sunny Wild Championship</h5>
+    </span>
+    <span class="navbar-text">
+      <p>O Sunny Wild Championship foi criado para promover a comunidade de Wild Rift e proporcionar uma plataforma para que jogadores mostrem suas habilidades em um ambiente competitivo. Nosso objetivo é reunir talentos, fomentar a camaradagem entre os participantes e oferecer uma experiência emocionante tanto para os jogadores quanto para os espectadores.
+
+        Queremos incentivar a competição saudável e a interação entre os jogadores, promovendo um espaço onde todos possam se divertir, aprender e crescer juntos. Junte-se a nós nesta jornada, celebre o espírito do jogo e torne-se parte da história do Sunny Wild Championship!</p>
+    </span>
+  </div>
+</nav>
+
+  <nav class="navbar container-fluid p-4">
+    <div class="container-fluid clearfix">
+      <span class="navbar-text text-start">
+        <h6>🌟 Junte-se a Nós para a Live do Sunny Wild Championship! 🌟</h6>
+        <p>Prepare-se para uma experiência incrível repleta de ação, estratégia e muita diversão!<br>No Sunny Wild, os melhores jogadores vão se enfrentar em batalhas épicas que você não vai querer perder.</p>
+
+        <p>🎮 Todo fim de semana a partir 26/10/2024</p>
+        <p>📺 twitch <a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.twitch.tv/mittz_1" target="_blank">mittz_1</a></p>
+          
+        <p>Venha torcer pelo seu player favorito, rir com nossos comentários hilários e participar dessa jornada emocionante!<br>Traga sua galera e faça parte da nossa comunidade. Vamos juntos fazer dessa live um evento inesquecível!</p>
+      </span>
+
+        <a href="https://www.twitch.tv/mittz_1" target="_blank">
+          <img src="img/imagemlive.png" class="rounded float-end " width="350" height="350" style="margin-right: 0px; margin-bottom: 15px;">
+        </a>
+    </div>
+  </nav>
+  <br>
+  <div class="container-fluid justify-content-center p-4">
+    <span class="navbar-text text-center">
+      <p>🌟 Junte-se à nossa comunidade no Discord e WhatsApp!<br><br>
+
+        Estamos animados em convidar você para fazer parte da nossa comunidade, onde campeonatos e jogos inhouse acontecem regularmente. Venha competir, se divertir e melhorar suas habilidades em um ambiente descontraído e cheio de interação. Além das partidas, você terá a oportunidade de trocar ideias, fazer novas amizades e ficar por dentro de todas as novidades e eventos que organizamos.
+        
+        Sua presença é muito importante para tornar essa comunidade ainda mais incrível! Estamos esperando por você no nosso Discord e no WhatsApp.
+        
+        </p>
+    </span>
+  </div>
+  <br>
+  <div class="d-flex justify-content-center align-items-center">
+    <a href="https://chat.whatsapp.com/KhenHvbmAW352jaoPFeaMc" target="_blank">
+      <img src="img/zap.png" class="img-fluid mx-4" width="100" height="100">
+    </a>
+    <a href="https://discord.gg/RKBsejRw" target="_blank">
+      <img src="img/dsic.png" class="img-fluid mx-4" width="100" height="100">
+    </a>
+  </div>
+  <br><br>
+  <span class="navbar-text text-center">
+    <h4>Venha fazer parte da comunidade Sunny Wild</h4>
+  </span>
+
+
+<br><br>
+<hr>
+<br><br>
+
+  <nav>
+    <div class="container-fluid p-4">
+      <span class="navbar-text text-center">
+        <h1>Tabela do campeonato</h1>
+        <h5>Venha verificar a posição do seu time</h5>
+      </span>
+    </div>
+
+    <div class="container container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+            <table class="table table-bordered border-black table-striped table-hover text-center" id="tabelaClasificacao">
+              <thead>
+                <tr>
+                  <th class="col-1" scope="col">#</th>
+                  <th class="col-3" scope="col">Times</th>
+                  <th class="col-1 sortable-header" scope="col" data-sort-index="2">Win and Loss <span>&#9660;</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Game Hub</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Midgard</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Ragnarok</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Painzitos Zoners</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>The Dicks Vigaristas</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Toninhos Tornado</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Triiix</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>FC Baile de Monique</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Hash</td>
+                  <td>0-0</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Real Madruga</td>
+                  <td>0-0</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<br>
+<br><br>
+<hr>
+<br><br>
+
+<style>
+  .card {
+    min-height: 150px; /* Define uma altura mínima para todos os cartões */
+    text-align: center; /* Centraliza o texto */
+    /* Outras propriedades que você pode ajustar */
+  }
+  .card-title {
+    font-size: 1.15rem; /* Tamanho da fonte do título */
+    margin-bottom: 0.75rem; /* Espaçamento abaixo do título */
+  }
+  .card-text {
+    font-size: 1rem; /* Tamanho da fonte do texto */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+  }
+</style>
+
+<div class="container-fluid">
+  <span class="navbar-text text-center">
+    <h1>Rodada 1</h1>
+  </span>
+</div>
+<!---Rodada 1-->
+<div class="card-container justify-content-center" style="display: flex; gap: 10px; padding: 35px;">
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--parte1-->
+<div class="card-container justify-content-center" style="display: flex; gap: 10px; padding: 35px;">
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center mb-3" style="width: 18rem;">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Time A vs Time B</h5>
+      <p class="card-text">Colocar uma Frase chave que resume o jogo.</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver resultado da partida</button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resultado da Partida</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Vencedor foi Time A<br>
+          Duração da partida: 20:43 min<br><br>
+
+          Time A<br><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">A+</span><br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565<br>
+          MID: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">MVP</span><br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br><br>
+
+          --------------------------<br><br>
+
+          Time A<br><br>
+          SUP: Eziew K:1|D:3|A:21|G:17.565<br>
+          ADC: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">SVP</span><br>
+          MID: Eziew K:1|D:3|A:21|G:17.565<br>
+          JUG: Eziew K:1|D:3|A:21|G:17.565|<span class="bg-warning text-primary">S+</span><br>
+          TOP: Eziew K:1|D:3|A:21|G:17.565<br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!---Rodada 1-->
+<br><br>
+<hr>
+<br><br>
+
+<div class="container-fluid"></div>
+  <span class="navbar-text text-center">
+    <h1>Estatisticas dos Players</h1>
+    <h3>Suporte</h3>
+  </span>
+</div>
+
+<div class="container container-fluid table-responsive">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+        <table class="table table-bordered border-black table-striped table-hover text-center" id="tabelaSuporte">
+          <thead>
+            <tr>
+              <th class="col-1" scope="col">#</th>
+              <th class="col-2" scope="col">Players</th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="2">Kill <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="3">Dead <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="4">Assist <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="5">Gold <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="6">Dano <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="7">Tank <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="8">Cura <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="9">CC <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="10">Visão <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="11">A <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="12">S <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="13">MVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="14">SVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="15">KDA <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="16">GPM <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="17">W-L <span>&#9660;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Saudades</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>IV Kuri</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>VH anddxy1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Miyu</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Mordekay</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Samu</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Yop</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Zednaldinho</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Arthur</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Luke</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container-fluid"></div>
+  <span class="navbar-text text-center">
+    <h3>ADC</h3>
+  </span>
+</div>
+
+<div class="container container-fluid table-responsive">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+        <table class="table table-bordered border-black table-striped table-hover text-center" id="tabelaAdc">
+          <thead>
+            <tr>
+              <th class="col-1 sortable-header" scope="col">#</th>
+              <th class="col-2 sortable-header" scope="col">Players</th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="2">Kill <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="3">Dead <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="4">Assist <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="5">Gold <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="6">Dano <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="7">Tank <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="8">Farm <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="9">Torre <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="10">Visão <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="11">A <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="12">S <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="13">MVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="14">SVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="15">KDA <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="16">GPM <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="17">DPS <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="18">W-L <span>&#9660;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Rayleigh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>IV Titan</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Chacal</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Sorganeil</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Ruler</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Renife</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Vanguard</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Davi</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Angel</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Laww</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container-fluid"></div>
+  <span class="navbar-text text-center">
+    <h3>Mid Laner</h3>
+  </span>
+</div>
+
+<div class="container container-fluid table-responsive">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+        <table class="table table-bordered border-black table-striped table-hover text-center">
+          <thead>
+            <tr>
+              <th class="col-1 sortable-header" scope="col">#</th>
+              <th class="col-2 sortable-header" scope="col">Players</th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="2">Kill <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="3">Dead <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="4">Assist <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="5">Gold <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="6">Dano <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="7">Tank <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="8">Farm <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="9">Torre <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="10">Visão <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="11">A <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="12">S <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="13">MVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="14">SVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="15">KDA <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="16">GPM <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="17">DPS <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="18">W-L <span>&#9660;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Leal</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>VH Aiye</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>VH Hykoss</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Tobirama</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Satoshi</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Arcanjo</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Tempest</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Lynx</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Mikan</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>HASH VK</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container-fluid"></div>
+  <span class="navbar-text text-center">
+    <h3>Jungler</h3>
+  </span>
+</div>
+
+<div class="container container-fluid table-responsive">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+        <table class="table table-bordered border-black table-striped table-hover text-center">
+          <thead>
+            <tr>
+              <th class="col-1 sortable-header" scope="col">#</th>
+              <th class="col-2 sortable-header" scope="col">Players</th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="2">Kill <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="3">Dead <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="4">Assist <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="5">Gold <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="6">Dano <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="7">Tank <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="8">Farm <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="9">Visão <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="10">A <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="11">S <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="12">MVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="13">SVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="14">Obj <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="15">KDA <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="16">GPM <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="17">DPS <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="18">W-L <span>&#9660;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>LordWR</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mumu xd</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Rare The Dog</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Robin Hood</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Chihiro</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Hashira</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Monobola</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Becky</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Pedrão Stomp</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>HASH Lich</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container-fluid"></div>
+  <span class="navbar-text text-center">
+    <h3>Top Laner</h3>
+  </span>
+</div>
+
+<div class="container container-fluid table-responsive">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+        <table class="table table-bordered border-black table-striped table-hover text-center">
+          <thead>
+            <tr>
+              <th class="col-1 sortable-header" scope="col">#</th>
+              <th class="col-2 sortable-header" scope="col">Players</th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="2">Kill <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="3">Dead <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="4">Assist <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="5">Gold <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="6">Dano <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="7">Tank <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="8">Farm <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="9">Torre <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="10">Visão <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="11">A <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="12">S <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="13">MVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="14">SVP <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="15">KDA <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="16">GPM <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="17">DPS <span>&#9660;</span></th>
+              <th class="col-1 sortable-header" scope="col" data-sort-index="18">W-L <span>&#9660;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Bless</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Whalkashy</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>VH Iristwb</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Polar</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Luan</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Jair</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Get Over Here</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Gregs</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Obito</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>HASH Levistro</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<br><br>
+
+<footer class="container-fluid bg-warning p-4">
+  <div class="container-fluid">
+      <span class="navbar-text text-center">
+          <p>Todos os direitos reservados por Gabriel Rodrigues de Sousa ©.</p>
+      </span>
+  </div>
+</footer>
+</body>
+
+<script>
+
+  document.querySelectorAll('.sortable-header').forEach(function(header) {
+    let sortOrder = true; // Variável para alternar entre crescente e decrescente
+
+    header.addEventListener('click', function() {
+      const table = header.closest('table'); // Pega a tabela mais próxima
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.rows);
+      const sortIndex = header.dataset.sortIndex; // Pega o índice da coluna a ser ordenada
+
+      rows.sort((a, b) => {
+        const numA = parseInt(a.cells[sortIndex].innerText) || 0; // Converte para número
+        const numB = parseInt(b.cells[sortIndex].innerText) || 0; // Converte para número
+        return sortOrder ? numB - numA : numA - numB; // Ordena em ordem crescente ou decrescente
+      });
+
+      rows.forEach((row, index) => {
+        row.cells[0].innerText = index + 1; // Atualiza a coluna #
+        tbody.appendChild(row); // Reanexa as linhas ordenadas
+      });
+
+      sortOrder = !sortOrder; // Alterna a ordem de ordenação
+    });
+  });
+
+</script>
+
+</html>
